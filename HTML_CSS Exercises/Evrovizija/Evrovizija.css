@@ -1,0 +1,277 @@
+body{
+    margin: 0px;
+    font-family: 'Lato';
+}
+*{
+    box-sizing: border-box;
+}
+.b20{
+    width: 20%;
+}
+.b40{
+    width:40%;
+}
+.b60{
+    width: 60%;
+}
+.b80{
+    width: 80%;
+}
+.fa-bars {
+    display: none;
+}
+.background{
+    background-image: url('https://eurovision.tv/images/background.jpg?id=3381b429ff2057adf85c');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 150px;
+}
+.main_menu {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    z-index: 10;
+    box-shadow: 5px 5px 5px #31384e;
+}
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    margin:0;
+    padding: 0;
+    text-transform: capitalize;
+}
+.menu li{
+    padding-right: 10px;
+    cursor: pointer;
+}
+.panel_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Lpanel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.Lpanel img{
+    margin-top:20px;
+}
+.Cpanel{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mikrifon {
+    height: 350px;
+}
+.mikrifon img{
+    width: 100%;
+}
+.srce{
+    position: absolute;
+    top:270px;
+    left:50px;
+}
+.Naslov {
+    padding: 20px;
+    width: 100%;
+    background-color: #31384e;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.naslov-cont{
+    text-align: left;
+    margin: 0 auto;
+}
+.Naslov p{
+    color: blue;
+    margin: 0;
+}
+.Naslov h1{
+    margin: 0px;
+}
+.Description {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items: flex-start;
+    background-color:white;
+    position: relative;
+}
+.DecrL{
+    background-color: rgb(201, 201, 201);
+    padding: 20px;
+}
+.DecrL ul{
+    display: inline;
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.DecrL li{
+    padding-bottom: 20px;
+}
+.DecrL p{
+    margin: 0px;
+}
+.DecrL p:nth-child(2){
+    color: blue;
+}
+.DecrR {
+    padding: 30px;
+    font-size: 120%;
+}
+.DecrR p:nth-child(1){
+    font-weight: bolder;
+}
+.Rpanel {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    text-transform: capitalize;
+    align-self: flex-end;
+}
+
+.tamara_holder {
+    position: relative;
+    width: 100%;
+   
+}
+.tamara_holder::before{
+    content: 'Tel aviv 2019';
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+.tamara_holder img {
+    width: 100%;
+}
+.tamara_holder p:nth-child(3){
+    color: blue;
+}
+.tamara_holder p{
+    margin-left:10px; 
+    font-weight: bold;
+}
+.footer {
+    background-color: #2586a7;
+    bottom: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+@media only screen and (max-width: 767px){
+    .panel_container {
+        flex-flow: column nowrap;
+
+    }
+    .Lpanel , .Cpanel , .Rpanel ,.DecrL , .DecrR {
+        width: 100%;
+    }
+    .Lpanel{
+        padding: 20px;
+    }
+.Description {
+    flex-flow: column;
+}
+.main_menu {
+    height: 80px;
+    position: relative;
+}
+.menu {
+    display: none;
+}
+.menu li{
+    padding: 10px;
+}
+.main_menu p{
+    display:none;
+}
+.fa-bars {
+    display: block;
+}
+.clicker i{
+position: absolute;
+font-size: 200%;
+top:20px;
+left:20px;
+}
+.clicker:hover .menu{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top:50px;
+    left:0;
+    right:0;
+    margin: 0 auto;
+}
+.mikrifon{
+    display: none;
+}
+.srce{
+    z-index: 10;
+    top:-25px;
+    left: 20px;
+    width:15%;
+}
+.srce img{
+    width: 100%;
+}
+.naslov-cont {
+    text-align: right;
+    font-size: 80%;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+
+    .panel_container {
+        flex-flow: column nowrap;
+
+    }
+    .Lpanel , .Cpanel , .Rpanel ,.DecrL , .DecrR {
+        width: 90%;
+    }
+    .Lpanel{
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .Rpanel {
+        align-self: center;
+    }
+   
+
+}

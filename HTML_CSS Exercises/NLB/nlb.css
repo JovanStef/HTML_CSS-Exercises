@@ -1,0 +1,225 @@
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.b80{
+    margin: 0px auto;
+    width: 80%
+}
+.b33{
+    width: 33%;
+}
+.b40{
+    width: 40%;
+}
+.b10 {
+    width: 10%;
+}
+.beloback {
+    width: 100%;
+    background-color: white;
+}
+.belomeni{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.logomeni {
+    width: 100%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.logomeni img{
+    height: 50px;
+}
+
+
+#belomeni {
+    color: #26007d;
+    width: 100%;
+    font-size: 120%;
+    margin: 0;
+    padding: 2%;
+    list-style-type: none;
+}
+#belomeni li{
+    display: inline;
+    padding: 2%;
+    cursor: pointer;
+}
+.iconimeni {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.iconimeni img{
+    padding: 1%;
+    height: 40px;
+}
+.search{
+    margin: 2%;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.plavo {
+    background-color:#26007d;
+    color:white;
+}
+#F{
+    margin: 0;
+    padding:  1% 0;
+    list-style-type: none;
+}
+#F [id]{
+    padding: 1%;
+    display: inline;
+    
+}
+#F li {
+    cursor: pointer;
+}
+ul{
+    position: relative;
+}
+
+
+.Psivo, .Asivo, .PAsivo{
+    padding: 10px;
+    display: none;
+}
+.vnatrelista {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.vnatrelista li{
+    padding: 10px;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    
+}
+#ponuda:hover .Psivo{
+    color: black;
+    width: 1150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color:#d8d8d8;
+    position: absolute;
+    left: 0;
+    top:40px;
+}
+#alatki:hover .Asivo{
+    color: black;
+    width: 1150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color:#d8d8d8;
+    position: absolute;
+    left: 0px;
+    top:40px;
+}
+#patista:hover .PAsivo{
+    color: black;
+    width: 1150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color:#d8d8d8;
+    position: absolute;
+    left: 0px;
+    top:40px;
+}
+.golem_baner{
+    background-image: url("https://nlb.mk/CMS/Upload/Other/PocetnaPozadini/b1.jpg");
+    border-bottom:5px solid #26007d;
+}
+
+.bela_kocka{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.808);
+    margin: 1%;
+    height: 200px;
+}
+.bela_kocka img{
+    height: 100%;
+}
+.kockiholder {
+    padding: 5% 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.txt {
+    padding: 20px;
+}
+h2, h3 , h4, h5{
+    margin: 0;
+    
+}
+.ftxtholder{
+    padding: 1% 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+.btn{
+    width: 48%;
+    padding: 2% ;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+}
+.Pbtn{
+    background-color: #26007d;
+}
+.Obtn{
+    background-color: orange;
+}
+.Gbtn {
+    background-color:green;
+}
+.padd10{
+    
+    padding: 1%;
+}
+p{
+    font-size: 90%;
+}
+h5 {
+    text-align: center;
+    padding-bottom:12%;
+    
+}
+.ftxtholder p{
+    font-size: 80%;
+}
+.ftxt{
+    text-align: left;
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+     
+    

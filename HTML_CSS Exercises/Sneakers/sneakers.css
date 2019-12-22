@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.flex_c{
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.flex_r{
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+.b80{
+    width: 80%;
+    margin:0 auto;
+}
+.b50{
+    width: 50%;
+}
+.b33{
+    width: 33%;
+}
+.b25{
+    width: 25%
+}
+
+.menu_logo{
+    padding: 0px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_container{
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+/* MENU */
+
+#w , #d , #m {
+    display: none;
+}
+#menu {
+    list-style: none;
+    text-transform: capitalize;
+}
+#W , #D , #M , .social{
+    padding:20px 10px;
+}
+.clicker i{
+    display:none;
+}
+.social i{
+    display: inline;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 120%;
+}
+.social i:nth-child(2){
+    padding: 8px 11px;
+}
+/* HEADER CONTENT */
+.header_content{
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header_container::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    height: 100%;
+    background-color: #28a745;
+    z-index: -2;
+}
+.header_container::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right:  0px;
+    width: 70%;
+    height: 100%;
+    background-color: #007bff;;
+    z-index: -2;
+}
+.patika img {
+    width: 100%;
+}
+.header_txt {
+    padding: 30px;
+}
+.header_txt span{
+    font-weight: bold;
+}
+.header_txt h1{
+    font-size: 350%;
+}
+.btn {
+    display: inline-block;
+    color:black;
+    background-color: white;
+    border-radius: 25px;
+    padding: 15px 30px;
+}
+/* ANIMACIJA */
+.animacija {
+    display: block;
+    width: 100%;
+    position: absolute;
+    font-size:350%;
+    z-index: -1;
+    opacity: 0.5;
+    top:40%;
+    animation-name: anim_poz;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim_poz{
+    from{right:-1300px;}
+    to{right:1500px;}
+}
